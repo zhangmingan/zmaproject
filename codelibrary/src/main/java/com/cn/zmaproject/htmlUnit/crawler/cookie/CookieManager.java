@@ -18,7 +18,11 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
+/**
+ * 
+ * @author zhangmingan
+ *
+ */
 @SuppressWarnings("deprecation")
 public class CookieManager {
 		private static final Logger logger = LoggerFactory.getLogger(CookieManager.class);
