@@ -5,7 +5,6 @@
  */
 package com.cn.zmaproject.htmlUnit.crawler.httpClient;
 
-import java.net.URL;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
 import java.util.ArrayList;

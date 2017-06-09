@@ -9,7 +9,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.alibaba.fastjson.JSONObject;
-
+/**
+ * @date 2017.06.08
+ * @author zhangmingan
+ * 超文本语言java解析类
+ */
 public class JsoupParser {
 	private static final Logger logger = LoggerFactory.getLogger(JsoupParser.class);
 	public static List<JSONObject> parseHtmlByRuleObject(String htmlText,JSONObject ruleObject){

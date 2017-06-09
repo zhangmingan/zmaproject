@@ -39,7 +39,11 @@ import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-
+/**
+ * @date 2017.06.09
+ * @author zhangmingan
+ *
+ */
 public class ExcelUtil{
     public static String NO_DEFINE = "no_define";//未定义的字段
     public static String DEFAULT_DATE_PATTERN="yyyy年MM月dd日";//默认日期格式

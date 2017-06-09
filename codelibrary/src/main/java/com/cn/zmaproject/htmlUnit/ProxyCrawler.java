@@ -24,7 +24,11 @@ import com.cn.zmaproject.htmlUnit.crawler.httpClient.WebResource;
 import com.cn.zmaproject.htmlUnit.proxy.ProxyInfo;
 import com.cn.zmaproject.htmlUnit.proxy.ProxyManager;
 
-
+/**
+ * @date 2017.06.08
+ * @author zhangmingan
+ * 代理爬虫类
+ **/
 public class ProxyCrawler {
 	private static final Logger logger = LoggerFactory.getLogger(ProxyCrawler.class);
 	private static String kuaidailiProxyUrl = "http://www.kuaidaili.com/proxylist/%s/";

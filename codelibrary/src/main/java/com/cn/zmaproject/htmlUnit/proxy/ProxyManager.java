@@ -24,7 +24,11 @@ import com.gargoylesoftware.htmlunit.html.HtmlTable;
 import com.gargoylesoftware.htmlunit.util.NameValuePair;
 
 import net.sf.json.JSONObject;
-
+/**
+ * @date 2017.06.08
+ * @author zhangmingan
+ * 代理管理控制类
+ */
 public class ProxyManager {
 	
 	private static Logger logger = LoggerFactory.getLogger(ProxyManager.class);

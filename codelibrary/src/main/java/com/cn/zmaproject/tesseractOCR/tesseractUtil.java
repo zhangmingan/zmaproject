@@ -10,7 +10,7 @@ import java.util.List;
 
 import com.cn.zmaproject.tesseractOCR.OCRTest.ImageIOHelper;
 /**
- * 
+ * @date 2017.06.08
  * @author zhangmingan
  *
  */

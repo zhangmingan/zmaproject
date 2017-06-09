@@ -299,13 +299,5 @@ public class HttpFetcher {
         WebResource wr = hf.get("http://wenshu.court.gov.cn");
         System.out.println(wr.getAsTxt());
         System.out.println(wr.getStatusCode());
-//        ProxyInfo pi = new ProxyInfo(ProxyInfo.PROXY_TYPE_HTTP, "120.52.72.58", 80, "", "");
-//        //hf.setProxyInfo(pi);
-//        WebResource wr = null;
-//        wr = hf.get("http://123.57.204.240:8080/index_1.jsp", null);
-//        //wr = hf.get("https://www.sgs.gov.cn/notice/home", null);
-//        System.out.println(TextUtils.getLines(wr.getInputStream()));
-//        wr = hf.get("https://www.sgs.gov.cn/notice/home", null);
-//        System.out.println(TextUtils.getLines(wr.getInputStream()));
     }
 }
