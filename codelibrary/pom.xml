@@ -121,23 +121,96 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org_springframework_version_codelibrary}</version><!--$spring$ -->
 		</dependency>
-  
+  		<dependency>  
+		    <groupId>org.slf4j</groupId>  
+		    <artifactId>slf4j-api</artifactId>  <!--$log$ -->
+		    <version>1.7.7</version>  
+		</dependency>  
+		<dependency>  
+		    <groupId>org.slf4j</groupId>  
+		    <artifactId>slf4j-log4j12</artifactId>  <!--$log$ -->
+		    <version>1.7.7</version>  
+		</dependency>  
+		<dependency>  
+		    <groupId>log4j</groupId>  
+		    <artifactId>log4j</artifactId>  <!--$log$ -->
+		    <version>1.2.17</version>  
+		</dependency>
 	    <dependency>
 	      <groupId>junit</groupId>
-	      <artifactId>junit</artifactId>
+	      <artifactId>junit</artifactId><!--$junit$ -->
 	      <version>3.8.1</version>
 	      <scope>test</scope>
 	    </dependency>
-	    
-	    <!-- https://mvnrepository.com/artifact/com.sun.media/jai_imageio -->
+	    <dependency>    
+		    <groupId>net.sf.json-lib</groupId>    
+		    <artifactId>json-lib</artifactId>    <!--$net.sf.json$ -->
+		    <version>2.4</version>    
+		    <classifier>jdk15</classifier>    
+		</dependency>
 		<dependency>
 		    <groupId>com.sun.media</groupId>
-		    <artifactId>jai_imageio</artifactId>
+		    <artifactId>jai_imageio</artifactId><!--$tesseractORC use$ -->
 		    <version>1.1</version>
+		</dependency>
+		
+		<dependency>
+    		<groupId>net.sourceforge.htmlunit</groupId>
+   			<artifactId>htmlunit</artifactId><!--$htmlUnit use$ -->
+    		<version>2.14</version>
+		</dependency>
+		<dependency>  
+			<groupId>org.jsoup</groupId>  
+			<artifactId>jsoup</artifactId>  <!--$htmlUnit use$ -->
+			<version>1.7.2</version>  
+		</dependency> 
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId> 
+          	<artifactId>httpclient</artifactId>  <!--$htmlUnit use$ -->
+          	<version>4.3.2</version>
+        </dependency> 
+        <dependency>
+			<groupId>commons-httpclient</groupId>
+			<artifactId>commons-httpclient</artifactId>  <!--$htmlUnit use old appche project$ -->
+			<version>3.1</version>
+		</dependency> 
+		<dependency>
+		    <groupId>org.jsoup</groupId>
+		    <artifactId>jsoup</artifactId>	<!--$htmlUnit use$ -->
+		    <version>1.10.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>	<!--$fastJson$ -->
+			<version>1.2.28</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi-ooxml</artifactId>		<!--$POI excel use$ -->
+		    <version>3.14</version>
 		</dependency>
   </dependencies>
   
   <build>
+ 		 <resources>  
+            <resource>  
+                <directory>src/main/resources</directory>  
+                <includes>  
+                    <include>**/*</include>  
+                </includes>  
+                <filtering>false</filtering>  
+            </resource>  
+            <resource>  
+                <directory>src/main/java</directory>  
+                <includes>  
+                    <include>**/*</include>  
+                </includes>
+                <excludes> 
+                    <exclude>**/*.java</exclude>  
+                </excludes>  
+                <filtering>false</filtering>  
+            </resource>  
+        </resources>  
 		<plugins>
 			<!-- compiler插件, 设定JDK版本 -->
 			<plugin>
